@@ -1,0 +1,225 @@
+body {
+    font-family: "";
+}
+
+.header {
+    background-color: #4c444d;
+    height : 60px;
+    color:white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo {
+    font-size: 20px;
+    padding-left: 20px;
+}
+
+.header-list ul{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header li {
+    padding: 0 20px ;
+}
+
+.container {
+    max-width: 1170px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.top-wrapper {
+    padding: 180px 0 100px 0;
+    background-image: url("https://prog-8.com/images/html/advanced/top.png");
+    color: white;
+    background-size: cover;
+    text-align: center;
+}
+
+.top-wrapper h1{
+    opacity: 0.8;
+    font-size: 40px;
+    letter-spacing: 3px;
+    line-height: 1;
+}
+
+.top-wrapper p{
+    opacity: 0.8;
+}
+
+.btn {
+    padding: 8px 25px;
+    color: white;
+    display: inline-block;
+    border-radius: 3px;
+    opacity: 0.8;
+    text-decoration: none;
+}
+
+.btn:hover {
+    opacity: 1;
+}
+
+.youtube {
+    background-color: red;
+    margin-right: 70px;
+}
+
+.twitter {
+    background-color: aqua;
+}
+
+.btn-wrapper {
+    margin: 20px 0;
+}
+
+.btn-wrapper p{
+    margin: 10px 0;
+}
+
+.fa {
+    margin-right: 5px;
+}
+
+.top-message {
+    background-color:rgb(248, 235, 220)
+}
+
+.message {
+    line-height: 1;
+}
+
+.message li{
+    line-height: 1.2;
+}
+
+.like ul{
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-left: 0;
+}
+
+.like li{
+    margin-left: 10px;
+}
+
+.top-movie {
+    padding-bottom: 80px;
+    background-color: #f7f7f7;
+}
+
+.heading {
+    padding: 20px 0 30px 0;
+    color: #271a2e;
+}
+
+.heading h2{
+    font-weight: normal;
+}
+
+.movies {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.movie-icon {
+    width: 200px;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.2s ease;
+}
+
+.movie-icon a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.movie-icon img {
+    display: block;
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.movie-link {
+    display: block;
+    margin-top: 10px;
+    padding: 6px 12px;
+    color: #333;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.movie-icon:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+
+    .header {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 0;
+    }
+
+    .header-logo {
+        padding-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .top-wrapper {
+        padding: 100px 20px 60px;
+    }
+
+    .top-wrapper h1 {
+        font-size: 28px;
+    }
+
+    .top-wrapper p {
+        font-size: 14px;
+    }
+
+    .movies {
+        justify-content: center;
+    }
+
+    .movie-icon {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .like ul {
+        flex-direction: column;
+        padding-left: 20px;
+    }
+
+    .btn-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .youtube {
+        margin-right: 0;
+    }
+}
