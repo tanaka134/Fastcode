@@ -1,5 +1,16 @@
+:root {
+    --main-color: #4c444d;
+    --accent-color: #ff4b4b;
+    --bg-light: #f7f7f7;
+    --radius: 10px;
+    --shadow: 0 4px 12px rgba(0,0,0,0.1);
+    --font: "Noto Sans JP", sans-serif;
+}
+
 body {
-    font-family: "";
+    font-family: var(--font);
+    background-color: var(--bg-light);
+    color: #333;
 }
 
 .header {
